@@ -1,5 +1,42 @@
 <html>
   <head>
+    <style>
+      body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  z-index: 0;
+}
+
+#content {z-index: 1;background-image: url("example.png");background-repeat: no-repeat;width: 100vw;background-size: 100vw;height: 60vw;min-width: 1040px;min-height: auto;color: #ddd;font-family: sans-serif;display: grid;grid-template-columns: 50% 50%;}
+
+#content > div {margin: 3em;padding: 1em;border-radius: 1em;background-color: rgba(0,0,0,.5);box-shadow: 0 0 10px 0px #444;}
+
+#header {
+  background: #333;
+  color: #ddd;
+  padding: 0em;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 4em;
+  padding: 0 1em;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+    </style>
   </head>
   <body>
     <div id='header'>
@@ -8,7 +45,6 @@
       </h1>
     </div>
     <div id="content">
-      <img src="example.png" />
         <div id="desc">
       <h2>
         A beautiful dashboard for your home.
